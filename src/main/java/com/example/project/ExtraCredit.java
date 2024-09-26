@@ -48,7 +48,6 @@ public class ExtraCredit {
         System.out.print("Enter the total cost: ");
         cost = scan.nextDouble();
 
-        // Consume the newline character left by nextDouble
         scan.nextLine();
 
         // Ask the user to enter menu items
@@ -64,6 +63,9 @@ public class ExtraCredit {
 
         // Call the method to calculate the tip and print the result
         System.out.println(calculateTip(people, percent, cost, items.toString()));
+
+
+        scan.close();
     }
 }
 
